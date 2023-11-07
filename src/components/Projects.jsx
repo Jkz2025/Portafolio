@@ -17,19 +17,8 @@ export function ProjectsJoel() {
       title: "My own website",
       description: "Design & Development",
       imgUrl: projectuno,
-    },
-    {
-      id: 3,
-      title: "Personal Ecommerce",
-      description: "Design & Development",
-      imgUrl: projectdos,
-    },
-    {
-      id: 4,
-      title: "My own website",
-      description: "Design & Development",
-      imgUrl: projectuno,
-    },
+    }
+
   ];
   return (
     <section className="project" id="projects">

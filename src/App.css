@@ -45,8 +45,6 @@ body {
   font-family: 'Centra', sans-serif !important;
   background-image: url('./assets/img/banner-bg2.png');
   background-repeat: no-repeat;
-
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,12 +78,12 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+/* @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
 		padding: 0 150px;
 	}
-}
+} */
 
 p.success {
 	color: green;
@@ -95,6 +93,10 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+.navbar-container{
+  width: 100%;
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -253,6 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
+  width: 100%;
 }
 
 .banner {
@@ -276,6 +279,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+}
+.banner .wrap {
+  color: red;
 }
 .banner h1 {
   font-size: 65px;
@@ -658,3 +664,136 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footertext{
   text-align: center;
 }
+@media (max-width: 900px) {
+  .app-container{
+    overflow-x:hidden;
+
+  }
+  .navbar-container{
+    display: none;
+    max-width: 400px;
+}
+  .logo{
+    display: none;
+  }
+
+  body {
+    max-width: 100%;
+    align-items: center;
+  }
+  .banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    display: inline-block;
+  }
+  .page-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .banner {
+    background: transparent; /* Elimina el fondo del banner */
+    text-align: center;
+    color: #fff;
+    height: auto; /* Elimina la altura fija para que se ajuste al contenido */
+    margin: 10px;
+    padding: 30px;
+    top: 10px;
+    max-width: 400px;
+  }
+  
+  .banner h1 {
+    font-size: 40px; /* Your desired font size for smaller screens */
+  }
+  .banner img {
+    animation: updown 3s linear infinite;
+    position: relative; /* Permite el posicionamiento absoluto */
+    /* Otras propiedades opcionales según tus necesidades */
+    width: auto;
+    height: 250px;
+    margin-top: -30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+  }
+/* Skills css */
+  .skill {  
+    max-width: 400px;
+    height: max-content;
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .project {
+    padding: 80px 0;
+    position: relative;
+    background-color: #121212;
+    max-width: 400px;
+  }
+  .contact {
+    max-width: 400px;
+    
+  }
+  .contact img {
+    width: 70%;
+    margin-left:60px;
+    margin-bottom: 30px;
+  }
+  .contact h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .contact form input, .contact form textarea {
+    width: 330px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+    margin-left: 35px;
+  }
+  .footer{
+    max-width: 400px;
+  }
+  .proj-imgbx{
+    max-width: 400px;
+  }
+  .banner{
+    max-width: 400px;
+  }
+}
+
+

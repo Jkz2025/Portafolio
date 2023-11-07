@@ -28,7 +28,7 @@ export function NavbarFormExample() {
   }
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container>
+      <Container className="navbar-container">
         <Navbar.Brand href="#home">
           
           <img src={logo} alt="Logo"  className="logo" />

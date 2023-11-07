@@ -55,12 +55,12 @@ export function Contact() {
             <h2>Contactame</h2>
             <form>
               <Row>
-                <Col sm={6} className="px-1">
+              <Col sm={6} className="px-1">
                   <input
                     type="text"
                     value={formDetails.firstName}
-                    placeholder="First Name"
-                    onChange={(e) => onFormUpdate("firstnName", e.target.value)}
+                    placeholder="first Name"
+                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="px-1">
@@ -81,7 +81,7 @@ export function Contact() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
-                    type="text"
+                    type="number"
                     value={formDetails.phone}
                     placeholder="Phone No."
                     onChange={(e) => onFormUpdate("phone", e.target.value)}

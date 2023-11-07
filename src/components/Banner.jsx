@@ -55,7 +55,7 @@ export function Banner() {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
             <span className="tagline"> Welcome to my portfolio</span>
             <h1>
-              {`Hola, mi nombre es Joel Vasquez `}
+              {`Hola, mi nombre es Joel Vasquez y actualmente soy `}
               <span className="wrap">{text}</span>{" "}
             </h1>
             <p>
