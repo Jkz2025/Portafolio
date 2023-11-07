@@ -11,12 +11,14 @@ export function ProjectsJoel() {
       title: "Personal Ecommerce",
       description: "Design & Development",
       imgUrl: projectdos,
+      link: "https://welivefromartshop.netlify.app"
     },
     {
       id: 2,
       title: "My own website",
       description: "Design & Development",
       imgUrl: projectuno,
+      link: "https://joelvasquezwebsite.netlify.app"
     }
 
   ];
